@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.WGHCWC'
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(path: ':livedatapool-annotation')
+    compile 'com.squareup:javapoet:1.11.1'
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
